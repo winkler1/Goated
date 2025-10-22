@@ -1,0 +1,38 @@
+package views
+
+import "strconv"
+
+templ Page() {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Datastar + Go + Templ</title>
+			<script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.6/bundles/datastar.js"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"/>
+			<style>
+			.noselect {
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			</style>
+		</head>
+		<body>
+			<div>
+				{ children... }
+			</div>
+		</body>
+	</html>
+}
+
+templ Home() {
+	@Page() {
+		<button class="noselect" data-on:click="@get('/increment')" data-ref="btn" id="inc">Increment</button>
+		<h2 class="noselect" data-init="@get('/counter')" id="counter"></h2>
+	}
+}
+
+templ Counter(count int) {
+	<h2 id="counter">Count: { strconv.Itoa(count) }</h2>
+}

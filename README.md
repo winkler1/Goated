@@ -28,8 +28,7 @@ templier -h
 ```sh
 go mod download
 ```
-4. Run
-Run Templier from the project root (re-run this whenever templates change):
+4. Run Templier from the project root (re-run this whenever templates change):
 ```sh
 templier
 ```

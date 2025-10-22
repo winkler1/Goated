@@ -9,7 +9,7 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/starfederation/datastar-go/datastar"
-	"github.com/winkler1/dgoat/web/views"
+	"github.com/winkler1/goated/web/views"
 )
 
 var counter int

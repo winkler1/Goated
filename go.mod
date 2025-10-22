@@ -1,4 +1,4 @@
-module github.com/winkler1/dgoat
+module github.com/winkler1/goated
 
 go 1.25.1
 

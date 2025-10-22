@@ -18,10 +18,9 @@ go version
 ```
 2. Install the Templier CLI
 ```sh
-go install github.com/romshark/templier/cmd/templier@latest
+go install github.com/romshark/templier@latest
 # Ensure the Go bin dir is on PATH (restart shell if needed)
 export PATH="$HOME/go/bin:$PATH"
-templier -h
 ```
 
 3. Download dependencies from go.mod

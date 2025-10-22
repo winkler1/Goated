@@ -23,12 +23,12 @@ go install github.com/romshark/templier/cmd/templier@latest
 export PATH="$HOME/go/bin:$PATH"
 templier -h
 ```
-3. 
-4. Download dependencies from go.mod
+
+3. Download dependencies from go.mod
 ```sh
 go mod download
 ```
-5. Run
+4. Run
 Run Templier from the project root (re-run this whenever templates change):
 ```sh
 templier
